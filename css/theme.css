@@ -1663,18 +1663,18 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-success .col-form-label,
 .has-success .form-check-label,
 .has-success .custom-control {
-  color: #0DDA69; }
+  color: #CE2D4F; }
 
 .has-success .form-control {
-  border-color: #0DDA69; }
+  border-color: #CE2D4F; }
 
 .has-success .input-group-addon {
-  color: #0DDA69;
-  border-color: #0DDA69;
+  color: #CE2D4F;
+  border-color: #CE2D4F;
   background-color: #b8fbd6; }
 
 .has-success .form-control-success {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%230DDA69' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23CE2D4F' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E"); }
 
 .has-warning .form-control-feedback,
 .has-warning .form-control-label,
@@ -1977,24 +1977,24 @@ fieldset[disabled] a.btn {
     border-color: #5bc0de; }
 
 .btn-outline-success {
-  color: #0DDA69;
+  color: #CE2D4F;
   background-image: none;
   background-color: transparent;
-  border-color: #0DDA69; }
+  border-color: #CE2D4F; }
   .btn-outline-success:hover {
     color: #fff;
-    background-color: #0DDA69;
-    border-color: #0DDA69; }
+    background-color: #CE2D4F;
+    border-color: #CE2D4F; }
   .btn-outline-success:focus, .btn-outline-success.focus {
     box-shadow: 0 0 0 2px rgba(13, 218, 105, 0.5); }
   .btn-outline-success.disabled, .btn-outline-success:disabled {
-    color: #0DDA69;
+    color: #CE2D4F;
     background-color: transparent; }
   .btn-outline-success:active, .btn-outline-success.active,
   .show > .btn-outline-success.dropdown-toggle {
     color: #fff;
-    background-color: #0DDA69;
-    border-color: #0DDA69; }
+    background-color: #CE2D4F;
+    border-color: #CE2D4F; }
 
 .btn-outline-warning {
   color: #ffd52d;
@@ -2974,8 +2974,8 @@ tbody.collapse.show {
     background-color: transparent; }
 
 .card-success {
-  background-color: #0DDA69;
-  border-color: #0DDA69; }
+  background-color: #CE2D4F;
+  border-color: #CE2D4F; }
   .card-success .card-header,
   .card-success .card-footer {
     background-color: transparent; }
@@ -3015,7 +3015,7 @@ tbody.collapse.show {
 
 .card-outline-success {
   background-color: transparent;
-  border-color: #0DDA69; }
+  border-color: #CE2D4F; }
 
 .card-outline-warning {
   background-color: transparent;
@@ -3251,7 +3251,7 @@ a.badge:focus, a.badge:hover {
     background-color: #1024ff; }
 
 .badge-success {
-  background-color: #0DDA69; }
+  background-color: #CE2D4F; }
   .badge-success[href]:focus, .badge-success[href]:hover {
     background-color: #0aaa52; }
 
@@ -4054,7 +4054,7 @@ a.bg-primary:focus, a.bg-primary:hover {
   background-color: #1024ff !important; }
 
 .bg-success {
-  background-color: #0DDA69 !important; }
+  background-color: #CE2D4F !important; }
 
 a.bg-success:focus, a.bg-success:hover {
   background-color: #0aaa52 !important; }
@@ -5917,7 +5917,7 @@ a.text-primary:focus, a.text-primary:hover {
   color: #1024ff !important; }
 
 .text-success {
-  color: #0DDA69 !important; }
+  color: #CE2D4F !important; }
 
 a.text-success:focus, a.text-success:hover {
   color: #0aaa52 !important; }
@@ -8431,7 +8431,8 @@ h5, h6 {
   padding-top: 0px; }
 
 .wrapper-no-padding-bottom {
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+}
 
 .wrapper-black {
   background-color: #000;
@@ -8477,7 +8478,7 @@ h5, h6 {
     color: #ebedff !important; }
 
 .wrapper-success {
-  background-color: #0DDA69;
+  background-color: #CE2D4F;
   color: #fff; }
 
 .wrapper-gray-lighter h1, .wrapper-gray-lighter h2, .wrapper-gray-lighter h3, .wrapper-gray-lighter h4, .wrapper-gray-lighter h5, .wrapper-gray-lighter h6, .wrapper-gray-lightest h1, .wrapper-gray-lightest h2, .wrapper-gray-lightest h3, .wrapper-gray-lightest h4, .wrapper-gray-lightest h5, .wrapper-gray-lightest h6, .wrapper-white h1, .wrapper-white h2, .wrapper-white h3, .wrapper-white h4, .wrapper-white h5, .wrapper-white h6 {
