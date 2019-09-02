@@ -8,13 +8,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     <title>Labra - Comunidad que cultiva</title>
 
-    <!-- Bootstrap core CSS -->
+    <script src="https://kit.fontawesome.com/5eddc9e9be.js"></script>
+
     <link href="css/theme.css" rel="stylesheet">
 
-     <link href="css/font-awesome.min.css" rel="stylesheet">
 
   </head>
 
@@ -33,12 +36,18 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">LABRA</a>
+
+      <a class="navbar-brand" href="#"><img  src="img/labra-logo.png" alt="labra logo" style="height:65px"></img>
+      </a>
 
       <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros <span class="sr-only">(current)</span></a>
           </li>
 
           <li class="nav-item">
@@ -54,12 +63,12 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Contacto <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
           </li>
 
         </ul>
         <form class="form-inline my-2 my-lg-0 ml-auto">
-          <button class="btn my-2 my-sm-0 btn-success btn-rounded" type="submit">Pide tu cotización<i class="fa fa-building" aria-hidden="true"></i>
+          <button class="btn my-2 my-sm-0 btn-outline-primary btn-rounded" onclick="window.location.href='#contacto';" type="button">Pide tu cotización  <i class="fa fa-envelope-open" aria-hidden="true"></i>
     </button>
         </form>
       </div>
@@ -71,35 +80,97 @@
 <!-- Jumbotron -->
 
       <div class="wrapper" style="overflow:hidden;">
-                    <!--<div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/.jpg);position:absolute; top:0; right:0; height:100%;" ></div>-->
+                    <!--<div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/office.jpg);position:absolute; top:0; right:0; height:100%;" ></div>-->
         <div class="container">
               <div class="row wrapper-80vh align-items-center my-5 ">
                 <div class="col-md-5 wrapper-lg wrapper-no-padding-bottom">
                   <p><h2>Labra</h2>
                   <h5 class="mb-3">Somos un espacio de trabajo, aprendizaje y colaboración. Somos comunidad que cultiva.</h5>
-                    <button type="submit" class="btn btn-primary btn-lg btn-rounded shadow">Ver más!<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                    <button type="button" onclick="window.location.href='#nosotros';" class="btn btn-primary btn-lg btn-rounded shadow">Ver más!<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                 </div>
                 <div class="col-md-6 offset-md-1">
-                  <img src="img/office2.jpg" class="shadow" alt="office" style="width:70%;position:absolute;; right:0;" data-start="top:-20vh; right:0;" data-end="top:-10vh; right:0;"/>
-                  <img src="img/office3.jpg" class="shadow"  alt="office" style="width:70%;position:absolute;; left:0;" data-start="top:-10vh;" data-end="top:10vh;"/>
+                  <img src="img/office2.jpg" class="shadow" alt="office" style="width:80%;position:absolute;; right:0;" data-start="top:-20vh; right:0;" data-end="top:-10vh; right:0;"/>
+                  <img src="img/taller.jpg" class="shadow"  alt="office" style="width:70%;position:absolute;; left:0;" data-start="top:-5vh;" data-end="top:10vh;"/>
                 </div>
               </div>
         </div>
       </div>
 
-<!-- Jumbotron End -->
+    <!-- Jumbotron End -->
+    <div class="wrapper wrapper-gray-dark bck-1 nosotros" id="nosotros">
+        <!--Carousel Wrapper-->
+        <h2 class="card-title">Nosotros</h2>
+
+        <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="view">
+                <img class="d-block w-100" src="./img/uno.jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">This is the first title</h3>
+                <p>First text</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block w-100" src="./img/dos.jpg" alt="Second slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Thir is the second title</h3>
+                <p>Secondary text</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block w-100" src="./img/tres.jpg" alt="Third slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">This is the third title</h3>
+                <p>Third text</p>
+              </div>
+            </div>
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+      <!--/.Carousel Wrapper-->
+      </div>
+
 
       <div class="card-group" id="espacios">
         <div class="card wrapper-md img-cover border-0 wrapper-primary">
           <img src="img/office.jpg"  alt="office" class="shadow" style="width:70%;position:absolute; right:10%;" />
         </div>
         <div class="card  wrapper-md wrapper-primary border-0 bck-2">
-          <div class="card-block col-10 mx-auto">
+          <div class="col-10 mx-auto">
             <h2 class="card-title">Espacios</h2>
-            <p class="card-text"><p class="lead">Espacio para coworking</p><p>Toma asiento en nuestra mesa colaborativa desde desde una hora hasta los meses que necesites.</p>
-            <p class="card-text"><p class="lead">Oficinas para equipos de trabajo</p><p>Elige un espacio fijo y privado para ti y tu equipo de hasta 6 personas.</p>
-            <p class="card-text"><p class="lead">Sala de juntas</p><p>Sostén tus reuniones y sesiones creativas en un espacio apto y acogedor para 8 personas.</p>
-            <p class="card-text"><p class="lead">Espacio para capacitaciones</p><p>Ofrece talleres, charlas o capacitaciones hasta para 18 personas.</p>
+            <p class="card-text"><p class="lead">Espacio para coworking</p><p>Toma asiento en nuestra mesa colaborativa desde desde una hora hasta los meses que necesites.</p></p>
+            <p class="card-text"><p class="lead">Oficinas para equipos de trabajo</p><p>Elige un espacio fijo y privado para ti y tu equipo de hasta 6 personas.</p></p>
+            <p class="card-text"><p class="lead">Sala de juntas</p><p>Sostén tus reuniones y sesiones creativas en un espacio apto y acogedor para 8 personas.</p></p>
+            <p class="card-text"><p class="lead">Espacio para capacitaciones</p><p>Ofrece talleres, charlas o capacitaciones hasta para 18 personas.</p></p>
           </div>
         </div>
       </div>
@@ -116,18 +187,16 @@
           <div class="card-group mt-5">
             <div class="card border-left-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-wifi" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fa fa-2x fa-wifi" aria-hidden="true"></i></p>
                 <h4 class="card-title">Internet de alta velocidad</h4>
                 <p class="card-text">Conexión vía WiFi y opción a conexión vía Ethernet en oficinas privadas.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
             <div class="card border-right-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-id-badge" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-chair" aria-hidden="true"></i></p>
                 <h4 class="card-title">Mobiliario ergonómico</h4>
                 <p class="card-text">Siéntate cómodamente en todos nuestros espacios.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
           </div>
@@ -135,18 +204,16 @@
           <div class="card-group mt-0">
             <div class="card border-left-0 border-top-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-snowflake-o" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-print" aria-hidden="true"></i></p>
                 <h4 class="card-title">Impresiones en blanco y negro</h4>
                 <p class="card-text">Todas las rentas mensuales incluyen tus impresiones.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
             <div class="card border-right-0 border-top-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-bars" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-coffee" aria-hidden="true"></i></p>
                 <h4 class="card-title">Agua, café y té</h4>
                 <p class="card-text">Todos los días, además de cortesías especiales una vez a la semana.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
           </div>
@@ -154,61 +221,47 @@
           <div class="card-group mt-0">
             <div class="card border-left-0 border-top-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-bullseye" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-utensils" aria-hidden="true"></i></p>
                 <h4 class="card-title">Cocina equipada</h4>
                 <p class="card-text">Refrigerador, microhondas, estufa y todo lo que necesites para preparar tu lunch.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
+
             <div class="card border-right-0 border-top-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-cc" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-umbrella-beach" aria-hidden="true"></i></p>
                 <h4 class="card-title">Terraza</h4>
                 <p class="card-text">Trabaja o descansa al aire libre.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
           </div>
-        
+
           <div class="card-group mt-0">
             <div class="card border-left-0 border-top-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-bullseye" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-concierge-bell" aria-hidden="true"></i></p>
                 <h4 class="card-title">Recepción</h4>
                 <p class="card-text">Atención de 8am a 8pm, recepción de paquetería y llamadas telefónicas.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
+
             <div class="card border-right-0 border-top-0">
               <div class="card-block">
-                <p class="text-success"><i class="fa fa-cc" aria-hidden="true"></i></p>
+                <p class="text-success"><i class="fas fa-2x fa-broom" aria-hidden="true"></i></p>
                 <h4 class="card-title">Limpieza</h4>
                 <p class="card-text">Diariamente en todos los espacios.</p>
-                <p class="card-text"><small class="text-muted"> </small></p>
               </div>
             </div>
           </div>
-        
+
           <div class="row wrapper-md">
             <div class="col-md-12 text-center">
-              <h4>Queremos que seas parte</h4>
+              <h4>¿Te hemos convencido?</h4>
               <p><h3>¡Únete a nuestra comunidad!</h3></p>
-              <a href="#" class="btn btn-lg btn-success btn-rounded">Contáctanos</a>
+              <a href="#contacto" class="btn btn-lg btn-success btn-rounded">Contáctanos</a>
             </div>
           </div>
     </div>
-  </div>
-
-  <div class="wrapper wrapper-black wrapper-lg d-flex align-content-center flex-wrap" >
-        <div class="overlay  img-cover" style="background-image: url(img/office4.jpg);"  data--10p-top="opacity:1" data-100p-top="opacity:.2"></div>
-          <div class="container align-self-center">
-            <div class="row">
-              <div class="col-md-6 offset-md-6 card py-5 bg-p bg-primary border-0">
-                <h2>¡Trabaja desde casa!</h2>
-                <p class="lead">Los espacios compartidos, comedor, etc consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-        </div>
   </div>
 
     <div class="wrapper wrapper-lg wrapper-white" id="comunidad">
@@ -231,42 +284,47 @@
 
 <!-- Jumbotron -->
 
-      <div class="wrapper wrapper-gray-dark bck-1">
-                    <div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/office.jpg);position:absolute; top:0; right:0; height:100%;" ></div>
+      <div class="wrapper wrapper-gray-dark bck-1" id="contacto">
+        <div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/office.jpg);position:absolute; top:0; right:0; height:100%;" ></div>
         <div class="container">
               <div class="row wrapper-100vh">
                 <div class="col-md-12 col-lg-6 col-xl-5 align-self-end my-5">
-                  <h3>Stay in touch with us!</h3>
-                            <form action="php/contact.php" method="post" role="form" data-toggle="validator" class="form-contact">
+                  <h3>¡Escríbenos!</h3>
+                            <form action="https://mailthis.to/hola@labra.mx" method="post" role="form" data-toggle="validator" class="form-contact">
 
                             <div class="form-group">
-                              <label class="control-label">Name</label>
+                              <label class="control-label">Nombre</label>
                               <input type="text" name="name" class="form-control  form-control-lg"  required ><br>
                               <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group">
-                              <label class="control-label">Email</label>
-                              <input type="email" name="email" class="form-control  form-control-lg" required ><br>
+                              <label class="control-label">Teléfono</label>
+                              <input type="text" name="phone" class="form-control  form-control-lg" ><br>
                               <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group">
-                              <label class="control-label">Your Message</label>
+                              <label class="control-label">Correo electrónico</label>
+                              <input type="email" name="_replyto" class="form-control  form-control-lg" required ><br>
+                              <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label">¿Qué necesitas?</label>
                               <textarea rows="5" name="message" cols="30" class="form-control  form-control-lg"  required ></textarea><br>
                               <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group text-center">
-                              <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-block btn-success btn-rounded">
+                              <input type="submit" name="submit" value="Enviar" class="btn btn-lg btn-block btn-success btn-rounded">
                             </div>
 
             </form>
                 </div>
                 <div class="col-12 align-self-end mb-5">
-                  <small>Stay connected with us:</small><br/>
-                  <i class="fa fa-facebook-official fa-2x mr-4" aria-hidden="true"></i>
-                  <i class="fa fa-twitter-square fa-2x mr-4" aria-hidden="true"></i>
-                  <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                  <small>Mantente conectado:</small><br/>
+                    <i class="fab fa-facebook-square fa-2x mr-4" onclick="window.open('https://www.facebook.com/labra.gdl', '_blank');"  aria-hidden="true"></i>
+                    <i class="fab fa-instagram fa-2x" onclick="window.open('https://www.instagram.com/labra.gdl', '_blank');" aria-hidden="true"></i>
                 </div>
 
           </div>
@@ -284,9 +342,9 @@
 <div class="container">
   <div class="row pb-5">
     <div class="col-md-5">
-    <h6>Contáctanos:</h6>
+    <h6>Contáctanos</h6>
       <address>
-      <p>Queremos conocer tus necesidades. Estmaos seguros que podemos ofrecerte una propuesta a la medida..</p>
+      <p>Queremos conocer tus necesidades. Estmaos seguros que podemos ofrecerte una propuesta a la medida.</p>
         <strong>Labra</strong><br>
         Mazamitla 3062, Col. Vallarta Poniente<br>
         Guadalajara, Jalisco<br>
@@ -296,68 +354,10 @@
 
   <div class="col-md-6 offset-md-1">
     <div class="row">
-      <div class="col-md-4">
-        <h6>Our spaces</h6>
-        <ul class="nav nav-xs flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">New York</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">San Francisco</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">London</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Berlin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Seattle</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Frankfurt <span class="badge badge-primary">soon</span></a>
-          </li>
-        </ul>
+              <!-- Google Maps -->
+      <div class="map-area mb-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14931.88003675466!2d-103.38486416894094!3d20.670799105495707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f1f2041d64f30ad!2sLabra!5e0!3m2!1ses!2smx!4v1567382760864!5m2!1ses!2smx" width="520" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
-
-            <div class="col-md-4">
-        <h6>About us</h6>
-        <ul class="nav nav-xs flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">The Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Jobs <span class="badge badge-success">New!</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">What we do</a>
-          </li>
-        </ul>
-      </div>
-
-            <div class="col-md-4">
-        <h6>About us</h6>
-        <ul class="nav nav-xs flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Terms of service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Company</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-   </div>
   </div>
 </div>
 
@@ -388,7 +388,24 @@
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(350).css({'overflow':'visible'});
             })
+
+            $('li a').click(function(e) {
+              //e.preventDefault();
+              var $this = $(this);
+              $this.closest('ul').find('li.active,a.active').removeClass('active');
+              $this.addClass('active');
+              $this.parent().addClass('active');
+            });
         //]]>
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145456924-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145456924-1');
     </script>
   </body>
 </html>
