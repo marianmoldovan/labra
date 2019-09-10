@@ -95,6 +95,14 @@ gulp.task('dist', ['cleandist'], function(){
     gulp.src('./js/*.min.js')
         .pipe(gulp.dest('./dist/js'));
 
-    gulp.src(['img/*.png','img/*.jpg','img/*.gif','img/*.jpeg', 'img/*.svg']).pipe(gulp.dest('dist/img'));
+    gulp.src('./fonts/*.otf')
+        .pipe(gulp.dest('./dist/fonts'));
+
+    gulp.src(['img/*.png','img/*.jpg','img/*.gif','img/*.jpeg']).pipe(imageop({
+        optimizationLevel: 7,
+        progressive: true,
+        interlaced: true,
+        debug:true
+    })).pipe(gulp.dest('dist/img'));
 
 });
