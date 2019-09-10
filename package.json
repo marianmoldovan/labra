@@ -13,8 +13,6 @@
     "bootstrap": "^4.0.0-alpha.6",
     "bootstrap-validator": "~0.8.1",
     "dataformat": "1.0.0",
-    "font-awesome": "~4.7.0",
-    "fontawesome": "4.7.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-ignore": "^1.2.1",

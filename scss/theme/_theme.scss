@@ -1,0 +1,435 @@
+//////////////////////////////////////
+// Globals
+//////////////////////////////////////
+
+body {
+  text-rendering: optimizelegibility;
+  font-feature-settings: "liga", "kern";
+  font-weight:300;
+}
+
+//////////////////////////////////////
+// Typo
+//////////////////////////////////////
+h1,h2,h3,h4,h5,h6, .btn, .navbar-brand, .navbar-nav li {
+  font-family: $secondary-font-family;
+} 
+
+
+h5,h6 {
+  font-weight:400;
+    line-height: 2rem;
+}
+
+.display-1, .display-2,.display-3,.display-4 {
+  font-weight:200;
+}
+
+
+.text-center {
+  text-align: center;
+}
+//////////////////////////////////////
+// Wrapper sizes and paddings
+//////////////////////////////////////
+.wrapper {
+  position:relative;
+}
+.wrapper-xxs {
+  padding-top: ($grid-gutter-width-base/4);
+  padding-bottom: ($grid-gutter-width-base/4);
+}
+
+.wrapper-xs {
+  padding-top: ($grid-gutter-width-base/2);
+  padding-bottom: ($grid-gutter-width-base/2);
+}
+
+.wrapper-sm {
+  padding-top: ($grid-gutter-width-base/1.25);
+  padding-bottom: ($grid-gutter-width-base/1.25);
+}
+
+.wrapper-md {
+  padding-top: ($grid-gutter-width-base*1.25);
+  padding-bottom: ($grid-gutter-width-base*1.25);
+}
+
+.wrapper-lg {
+  padding-top: ($grid-gutter-width-base*2);
+  padding-bottom: ($grid-gutter-width-base*2);
+}
+
+.wrapper-xl {
+  padding-top: ($grid-gutter-width-base*2.75);
+  padding-bottom: ($grid-gutter-width-base*2.75);
+}
+
+.wrapper-xxl {
+  padding-top: ($grid-gutter-width-base*4);
+  padding-bottom: ($grid-gutter-width-base*4);
+}
+
+.wrapper-xxxl {
+  padding-top: ($grid-gutter-width-base*6);
+  padding-bottom: ($grid-gutter-width-base*6);
+}
+
+.wrapper-50vh {
+height:50vh;
+}
+
+.wrapper-75vh {
+min-height:75%;
+height:75vh;
+}
+
+.wrapper-80vh {
+min-height:80%;
+height:80vh;
+}
+
+.wrapper-90vh {
+min-height:90%;
+height:90vh;
+}
+
+.wrapper-100vh {
+height:100vh;
+}
+
+.wrapper-no-padding {
+  padding:0px;
+}
+
+.wrapper-no-padding-top {
+  padding-top:0px;
+}
+
+.wrapper-no-padding-bottom {
+  padding-bottom:0px;
+}
+
+//////////////////////////////////////
+// Wrapper colors
+//////////////////////////////////////
+.wrapper-black {
+  background-color:$black;
+  color:$gray-lighter;
+  p, .lead {
+      color:$white;
+  }
+  .nav-item .nav-link  {
+    color:$gray-light;
+  }
+  .nav-item a.nav-link:focus, .nav-item a.nav-link:hover {
+    color:$brand-primary;
+  }
+}
+.wrapper-gray-darker {
+  background-color:$gray-darker;
+  color:lighten($gray-darker, 75%);
+}
+
+.wrapper-gray-dark {
+  background-color:$gray-dark;
+  color:lighten($gray-dark, 60%);
+}
+
+.wrapper-gray {
+  background-color:$gray;
+  color:lighten($gray, 60%);
+}
+
+.wrapper-gray-light {
+  background-color:$gray-light;
+  color:lighten($gray-light, 33%);
+}
+
+.wrapper-gray-lighter {
+  background-color:$gray-lighter;
+  color:$gray;
+}
+
+.wrapper-gray-lightest {
+  background-color:$gray-lightest;
+  color:$gray;
+}
+
+.wrapper-white {
+  background-color:$white;
+}
+
+.wrapper-primary {
+  background-color:$brand-primary;
+  color:$white;
+  .text-muted {
+    color:lighten($brand-primary, 33%)!important;
+  }
+}
+
+.wrapper-success {
+  background-color:$brand-success;
+    color:$white;
+}
+
+// Wrapper headings
+.wrapper-gray-lighter, .wrapper-gray-lightest, .wrapper-white{
+    h1,h2,h3,h4,h5,h6 {
+    color:$black;
+  }
+}
+
+.wrapper-black, .wrapper-gray, .wrapper-gray-dark, .wrapper-gray-light{
+    h1,h2,h3,h4,h5,h6 {
+    color:$white;
+  }
+}
+
+//////////////////////////////////////
+// Navbars
+//////////////////////////////////////
+.navbar {
+  font-weight:400;
+}
+.nav-item a{
+  color:$black;
+  border-bottom:1px solid transparent;
+}
+  .nav-item.active a{
+    border-bottom:1px solid $brand-primary;
+  }
+.navbar-transparent {
+  background:none;
+  background-color:transparent!important;
+}
+
+.navbar-border {
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.navbar-white {
+  background-color:#fff;
+}
+
+.navbar-absolute {
+  position:absolute;
+  z-index:100;
+  float:left;
+  width:100%;
+}
+
+.navbar-brand {
+  border: 1px solid rgba(0,0,0,.3);
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  background-color:$white;
+}
+
+.navbar-inverse .navbar-brand {
+  border: 1px solid rgba(255,255,255,.3);
+  background-color:transparent;
+}
+.claim {
+  position: relative;
+  z-index:10;
+}
+.claim:after {
+
+}
+.nav-xs .nav-link {
+  padding:2px 0;
+}
+
+.nav-sm .nav-link {
+  padding:($grid-gutter-width-base/12) 0;
+}
+
+//////////////////////////////////////
+// footer
+//////////////////////////////////////
+#footer {
+  font-size:.875rem;
+  .container {
+    border-bottom:1px solid rgba(255,255,255,.2);
+  }
+
+}
+  #footer.wrapper-black p{
+    color:$gray-light;
+  }
+//////////////////////////////////////
+// Overlays
+//////////////////////////////////////
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay.overlay-dark {
+  background-color: rgba(0,0,0,.33);
+}
+
+.overlay.overlay-darker {
+  background-color: rgba(0,0,0,.5);
+}
+
+.overlay.overlay-gray{
+  background-color: rgba(48,48,48,.33);
+}
+
+.overlay.overlay-darkest {
+  background-color: rgba(0,0,0,.75);
+}
+
+.overlay.overlay-light {
+  background-color: rgba(255,255,255,.3);
+}
+
+.overlay.overlay-primary {
+  background-color: $brand-primary;
+  opacity:.66;
+}
+
+.overlay.overlay-white {
+  background-color: $white;
+  opacity:.85;
+}
+
+a.overlay:hover {
+    background-color: rgba(255,255,255,.5);
+      -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity:.5;
+}
+
+.img-cover {
+  background-size:cover;
+  background-position: center center;
+}
+
+.shadow {
+  box-shadow: -15px 15px 50px 10px rgba(0,0,0,.5);
+}
+
+//////////////////////////////////////
+// Image effects
+//////////////////////////////////////
+.fx-blur{
+ -webkit-filter: blur(1px);
+  filter: blur(1px);
+  overflow:hidden;
+}
+
+.fx-unblur {
+   -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.fx-bw { 
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.fx-bg-fixed{
+   background-attachment:fixed;
+}
+
+
+//////////////////////////////////////
+// Magic stuff
+//////////////////////////////////////
+.v-align{
+    position: relative;
+    transform: translate3d(0px, -50%, 0px);
+    top: 50%;
+    z-index: 2;
+}
+
+.v-align-middle {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+a.img-link:hover img {
+  opacity:.5;
+}
+
+
+//////////////////////////////////////
+// Gradients
+//////////////////////////////////////
+.gradient-bck-1{
+background: linear-gradient(46deg,#4331ba,#f36);
+background-color: #a13290;
+        
+}
+
+.bck-1 {
+  background-image: url(../img/party.png);
+}
+
+.bck-2 {
+  background-image: url(../img/party2.svg);
+}
+.transparent {
+  background-color:transparent;
+}
+
+//////////////////////////////////////
+// Extra Utilities
+//////////////////////////////////////
+
+.persona-thumb {
+  box-shadow: 15px 15px 2px -10px rgba(0,0,0,.66);
+  margin-bottom:20px;
+}
+
+.blockquote {
+  border:none;
+  font-size:1.1em;
+}
+//////////////////////////////////////
+// Bootstrap Overwrites
+//////////////////////////////////////
+.btn {
+  font-weight:300;
+}
+.btn-lg {
+    text-transform: uppercase;
+      font-size:1em;
+      letter-spacing:.1em;
+      font-weight:300;
+}
+
+.btn-rounded {
+  border-radius:999px;
+}
+
+
+.card {
+  border:1px solid $gray-lighter;
+}
+
+.card-inverse {
+  color:#fff;
+}
+
+.check-list{
+  padding:0px;
+  margin:0px;
+ li {
+  border-bottom:1px solid $gray-lighter;
+  display:block;
+  padding:10px;
+}
+}
