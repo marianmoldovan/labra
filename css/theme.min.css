@@ -1784,8 +1784,6 @@ a.overlay:hover{background-color:rgba(255,255,255,.5);-webkit-filter:grayscale(1
 .v-align-middle{vertical-align:middle;display:table-cell}
 a.img-link:hover img{opacity:.5}
 .gradient-bck-1{background:linear-gradient(46deg,#4331ba,#f36);background-color:#a13290}
-.bck-1{background-image:url(../img/party.png)}
-.bck-2{background-image:url(../img/party2.svg)}
 .nosotros{padding:5% 15%}
 .transparent{background-color:transparent}
 .persona-thumb{box-shadow:15px 15px 2px -10px rgba(0,0,0,.66);margin-bottom:20px}
