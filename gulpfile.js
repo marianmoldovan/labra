@@ -99,7 +99,7 @@ gulp.task('dist', ['cleandist'], function(){
         .pipe(gulp.dest('./dist/fonts'));
 
     gulp.src(['img/*.png','img/*.jpg','img/*.gif','img/*.jpeg']).pipe(imageop({
-        optimizationLevel: 7,
+        optimizationLevel: 10,
         progressive: true,
         interlaced: true,
         debug:true
