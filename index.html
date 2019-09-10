@@ -21,7 +21,7 @@
 
   </head>
 
-  <body id="skrollr-body" class="bck-1">
+  <body id="skrollr-body" >
 
 <!-- Preloader -->
 <div id="preloader">
@@ -29,7 +29,7 @@
 </div>
 
 <!-- The navigation -->
-<div class="wrapper wrapper-black" style="position:fixed;width:100%;z-index:100;height:134px;" data-0="background-color:rgba(255,255,255,0);" data-150="background-color:rgba(255,255,255,1);">
+<div class="wrapper wrapper-primary" style="position:fixed;width:100%;z-index:100;height:134px;" data-0="background-color:rgba(73,110,242,0);" data-150="background-color:rgba(73,110,242,1);">
   <div class="container">
 
     <nav class="navbar navbar-toggleable-md navbar-light px-0 navbar-transparent">
@@ -37,7 +37,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand" href="#"><img  src="img/labra-logo.png" alt="labra logo" style="height:65px"></img>
+      <a href="#"><img  src="img/labra-logo.png" alt="labra logo" style="height:65px"></img>
       </a>
 
       <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
@@ -51,11 +51,12 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#espacios">Espacios <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#servicios">Servicios <span class="sr-only">(current)</span></a>
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#precios">Precios <span class="sr-only">(current)</span></a>
           </li>
 
           <li class="nav-item">
@@ -66,9 +67,18 @@
             <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/labra.gdl"><i class="fab fa-facebook-square " onclick="window.open('https://www.facebook.com/labra.gdl', '_blank');"  aria-hidden="true"></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.instagram.com/labra.gdl"><i class="fab fa-instagram " onclick="window.open('https://www.facebook.com/labra.gdl', '_blank');"  aria-hidden="true"></i></a>
+          </li>
+
+
         </ul>
         <form class="form-inline my-2 my-lg-0 ml-auto">
-          <button class="btn my-2 my-sm-0 btn-outline-primary btn-rounded" onclick="window.location.href='#contacto';" type="button">Pide tu cotización  <i class="fa fa-envelope-open" aria-hidden="true"></i>
+          <button class="btn my-2 my-sm-0 btn-outline-secondary btn-rounded" onclick="window.location.href='#contacto';" type="button">Pide tu cotización  <i class="fa fa-envelope-open" aria-hidden="true"></i>
     </button>
         </form>
       </div>
@@ -79,14 +89,14 @@
 </div>
 <!-- Jumbotron -->
 
-      <div class="wrapper" style="overflow:hidden;">
+      <div class="wrapper wrapper-primary" style="overflow:hidden;">
                     <!--<div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/office.jpg);position:absolute; top:0; right:0; height:100%;" ></div>-->
         <div class="container">
               <div class="row wrapper-80vh align-items-center my-5 ">
                 <div class="col-md-5 wrapper-lg wrapper-no-padding-bottom">
                   <p><h2>Labra</h2>
                   <h5 class="mb-3">Somos un espacio de trabajo, aprendizaje y colaboración. Somos comunidad que cultiva.</h5>
-                    <button type="button" onclick="window.location.href='#nosotros';" class="btn btn-primary btn-lg btn-rounded shadow">Ver más!<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                    <button type="button" onclick="window.location.href='#nosotros';" class="btn btn-outline-secondary btn-lg btn-rounded shadow-md">Ver más!<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                 </div>
                 <div class="col-md-6 offset-md-1">
                   <img src="img/office.jpg" class="shadow" alt="office" style="width:80%;position:absolute;; right:0;" data-start="top:-20vh; right:0;" data-end="top:-10vh; right:0;"/>
@@ -97,9 +107,9 @@
       </div>
 
     <!-- Jumbotron End -->
-    <div class="wrapper wrapper-gray-dark bck-1 nosotros" id="nosotros">
+    <div class="wrapper wrapper-yellow nosotros" id="nosotros">
         <!--Carousel Wrapper-->
-        <h2 class="card-title">Nosotros</h2>
+        <h3 class="card-title">Nosotros</h3>
 
         <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
           <!--Indicators-->
@@ -107,6 +117,7 @@
             <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-2" data-slide-to="1"></li>
             <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-2" data-slide-to="3"></li>
           </ol>
           <!--/.Indicators-->
           <!--Slides-->
@@ -143,6 +154,19 @@
                 <p>Sostén tus reuniones y sesiones creativas en un espacio apto y acogedor para 8 personas.</p>
               </div>
             </div>
+
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block w-100" src="./img/uno.jpg" alt="Forth slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Espacio para capacitaciones</h3>
+                <p>Ofrece talleres, charlas o capacitaciones hasta para 18 personas.</p>
+              </div>
+            </div>
+
           </div>
           <!--/.Slides-->
           <!--Controls-->
@@ -157,22 +181,6 @@
           <!--/.Controls-->
         </div>
       <!--/.Carousel Wrapper-->
-      </div>
-
-
-      <div class="card-group" id="espacios">
-        <div class="card wrapper-md img-cover border-0 wrapper-primary">
-          <img src="img/office.jpg"  alt="office" class="shadow" style="width:70%;position:absolute; right:10%;" />
-        </div>
-        <div class="card  wrapper-md wrapper-primary border-0 bck-2">
-          <div class="col-10 mx-auto">
-            <h2 class="card-title">Espacios</h2>
-            <p class="card-text"><p class="lead">Espacio para coworking</p><p>Toma asiento en nuestra mesa colaborativa desde desde una hora hasta los meses que necesites.</p></p>
-            <p class="card-text"><p class="lead">Oficinas para equipos de trabajo</p><p>Elige un espacio fijo y privado para ti y tu equipo de hasta 6 personas.</p></p>
-            <p class="card-text"><p class="lead">Sala de juntas</p><p>Sostén tus reuniones y sesiones creativas en un espacio apto y acogedor para 8 personas.</p></p>
-            <p class="card-text"><p class="lead">Espacio para capacitaciones</p><p>Ofrece talleres, charlas o capacitaciones hasta para 18 personas.</p></p>
-          </div>
-        </div>
       </div>
 
     <div class="wrapper wrapper-lg wrapper-no-padding-bottom text-center" id="servicios">
@@ -254,7 +262,7 @@
             </div>
           </div>
 
-          <div class="row wrapper-md">
+          <div class="row wrapper-sm">
             <div class="col-md-12 text-center">
               <h4>¿Cuáles son tus necesidades?</h4>
               <p><h3>¡Queremos escucharte!</h3></p>
@@ -264,28 +272,114 @@
     </div>
   </div>
 
-    <div class="wrapper wrapper-lg wrapper-white" id="comunidad">
+  <div class="wrapper wrapper-md  wrapper-gray-lightest " id="precios">
+          <div class="container">
+                      <div class="row">
+            <div class="col-md-12 text-center mb-5">
+              <h2>Precios</h2>
+              <h5>Te presentamos los precios para nuestro coworking, sala de juntas y oficina privada</h5>
+            </div>
+          </div>
+            <div class="row">
+
+            <div class="col-md-3 card p-5  card-inverse card-success">
+              <div class="text-center mb-4">
+              <i class="fa fa-bars fa-2x mb-4" aria-hidden="true"></i>
+              <h4 class="mb-4">Membresía área de coworking</h4>
+              <span class="h2">$2,500</span><small>/mes</small>
+            </div>
+              <ul class="check-list">
+                <li>Pase por día y hora también disponible <span class="float-right"><i class="fa fa-check-circle" aria-hidden="true"></i></span></li>
+                <li>Sillas ergonómicas </li>
+                <li>Conexión a WiFi de 200MB. </li>
+                <li>50 impresiones b/n al mes </li>
+                <li>Agua, café y té </li>
+                <li>Uso de espacios comunes</li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 card p-3  border-left-0 mt-3">
+              <div class="text-center mb-4">
+              <i class="fa fa-bars fa-2x mb-4" aria-hidden="true"></i>
+              <h4 class="mb-4">Escritorios fijos en oficina compartida</h4>
+              <span class="h2 text-success">$2,900</span><small>/mes</small>
+            </div>
+              <ul class="check-list">
+                <li>Sillas ergonómicas</li>
+                <li>Aire acondicionado</li>
+                <li>Conexión a WiFi de 200MB.</li>
+                <li>50 impresiones b/n al mes</li>
+                <li>Agua, café y té</li>
+                <li>Locker</li>
+                <li>Conexión Ethernet</li>
+                <li>Uso de espacios comunes</li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 card p-3  border-left-0 mt-3">
+              <div class="text-center mb-4">
+              <i class="fa fa-bars fa-2x mb-4" aria-hidden="true"></i>
+              <h4 class="mb-4">Oficinas privadas</h4>
+              <small>Desde</small><span class="h2 text-success">$9,120</span><small>/mes</small>
+            </div>
+              <ul class="check-list">
+                <li>Para equipos de 4 o 6 personas</li>
+                <li>Sillas ergonómicas</li>
+                <li>Closet y espacio de almacenaje en cada oficina</li>
+                <li>Conexión a WiFi de 200MB.</li>
+                <li>Conexión Ethernet</li>
+                <li>Aire acondicionado</li>
+                <li>Llamadas ilimitadas a teléfonos fijos locales, nacionales e internacionales </li>
+                <li>Agua, café y té</li>
+                <li>Uso de espacios comunes</li>
+                <li>Atención telefónica y recepción de paquetería</li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 card p-3  border-right-0 mt-3">
+              <div class="text-center mb-4">
+              <i class="fa fa-bars fa-2x mb-4" aria-hidden="true"></i>
+              <h4 class="mb-4">Sala de Juntas</h4>
+              <span class="h2 text-success">$200</span><small>/hora</small>
+            </div>
+              <ul class="check-list">
+                <li>Smart TV y cable HDMI</li>
+                <li>Aire acondicionado</li>
+                <li>Pintarrón blanco</li>
+                <li>Conexión WiFi a la red de visitantes</li>
+                <li>Atención en recepción</li>
+              </ul>
+            </div>
+
+            </div>
+
+        </div>
+  </div>
+
+    <div class="wrapper wrapper-lg wrapper-yellow" id="comunidad">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
 
-                  <img src="img/office6.jpg"  alt="office" class="shadow" style="width:70%;position:absolute; right:10%;" data-start="top:-40vh;" data-end="top:20vh;"/>
-                  <img src="img/office5.jpg"  alt="office" class="shadow " style="width:60%;position:absolute; left:-5%;" data-start="top:-70vh;" data-end="top:20vh;"/>
-              </div>
-              <div class="col-md-6 card py-5">
-                <h2>Una comunidad de trabajo viva</h2>
-                <p class="lead">Organizamos con frecuencia, eventos y taller con los mejores speakers y profesionales, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>
+                <img src="img/taller-uno.jpg"  alt="office" class="shadow" style="width:70%;position:absolute; right:10%;" data-start="top:-40vh;" data-end="top:20vh;"/>
+                <img src="img/taller-dos.jpg"  alt="office" class="shadow " style="width:60%;position:absolute; left:-5%;" data-start="top:-70vh;" data-end="top:20vh;"/>
+            </div>
+              <div class="col-md-6 py-5">
+                <h3>Una espacio de aprendizaje</h3>
+                <p class="lead">Creemos que el talento y los conocimientos son para compartirse, por eso programamos una agenda de talleres con contenidos atractivos y pertinentes que apelen a la colectividad, la sustentabilidad y la difusión de ideas transformadoras.<br/>
                 </p>
+                <br/><p class="lead">Eventos:</p>
+                <a href="https://www.facebook.com/events/366613107341736/" target="_blank"><img  src="img/evento-uno.jpg" style="width:40%"></a>
+                <a href="https://www.facebook.com/events/673629849779418/" target="_blank"><img  src="img/evento-dos.jpg" style="width:40%"></a>
               </div>
-
             </div>
         </div>
   </div>
 
 <!-- Jumbotron -->
 
-      <div class="wrapper wrapper-gray-dark bck-1" id="contacto">
-        <div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/office.jpg);position:absolute; top:0; right:0; height:100%;" ></div>
+      <div class="wrapper wrapper-black" id="contacto">
+        <div class="img-cover hidden-md-down col-md-4 col-lg-5 col-xl-6" style="background-image: url(img/office-hall.jpg);position:absolute; top:0; right:0; height:100%;" ></div>
         <div class="container">
               <div class="row wrapper-100vh">
                 <div class="col-md-12 col-lg-6 col-xl-5 align-self-end my-5">
@@ -350,15 +444,14 @@
         Guadalajara, Jalisco<br>
         hola@labra.mx<br>
         <abbr title="Phone">Tel:</abbr> (52) 33 1589 7011
+        <abbr title="Phone">Tel:</abbr> (52) 33 1589 7013
       </address>
     </div>
 
   <div class="col-md-6 offset-md-1">
-    <div class="row">
+    <div class="row map-area">
               <!-- Google Maps -->
-      <div class="map-area mb-100">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14931.88003675466!2d-103.38486416894094!3d20.670799105495707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f1f2041d64f30ad!2sLabra!5e0!3m2!1ses!2smx!4v1567382760864!5m2!1ses!2smx" width="520" height="320" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14931.88003675466!2d-103.38486416894094!3d20.670799105495707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f1f2041d64f30ad!2sLabra!5e0!3m2!1ses!2smx!4v1567382760864!5m2!1ses!2smx" style="width:100%;height:100%;" frameborder="0" allowfullscreen=""></iframe>
   </div>
 </div>
 
